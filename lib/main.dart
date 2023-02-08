@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tmdb_network_layer/data_agent/tmdb_data_agent/tmdb_data_agent_impl.dart';
-
 void main() {
   runApp(const MyApp());
-  TmdbDataAgentImpl obj=TmdbDataAgentImpl();
-  obj.getNowPlaying()?.then((value) => print('Value======>$value'));
 }
 
 class MyApp extends StatelessWidget {
